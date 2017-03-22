@@ -1,25 +1,20 @@
-/**
- * Created by Joker on 3/22/2017.
- */
+import java.util.List;
+
 public class FizzBuzz {
+
+    private List<Rule> rules;
+
+    public FizzBuzz(List<Rule> rules) {
+        this.rules = rules;
+    }
+
     public String say(int i) {
 
-        FizzBuzzRule fizzBuzzRule = new FizzBuzzRule();
-        FizzRule fizzRule = new FizzRule();
-        BuzzRule buzzRule = new BuzzRule();
-
-        if (fizzBuzzRule.isMyRule(i)) {
-            return fizzBuzzRule.say(i);
+        for (Rule rule : rules) {
+            if (rule.isMyRule(i)) {
+                return rule.say(i);
+            }
         }
-
-        if (fizzRule.isMyRule(i)) {
-            return fizzRule.say(i);
-        }
-
-        if (buzzRule.isMyRule(i)) {
-            return buzzRule.say(i);
-        }
-
         return Integer.toString(i);
     }
 }

@@ -1,5 +1,5 @@
 
-public class FizzBuzzRule {
+public class FizzBuzzRule implements Rule {
 
     public static final String SAY = "FIZZBUZZ";
 
