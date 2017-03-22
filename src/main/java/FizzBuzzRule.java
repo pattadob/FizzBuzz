@@ -3,13 +3,13 @@ public class FizzBuzzRule {
 
     public static final String SAY = "FIZZBUZZ";
 
-    public boolean isFizzBuzz(int i) {
+    public boolean isMyRule(int i) {
         FizzRule fizzRule = new FizzRule();
         BuzzRule buzzRule = new BuzzRule();
-        return fizzRule.isFizz(i) && buzzRule.isBuzz(i);
+        return fizzRule.isMyRule(i) && buzzRule.isMyRule(i);
     }
 
     public String say(int i) {
-        return isFizzBuzz(i) ? SAY : "";
+        return isMyRule(i) ? SAY : "";
     }
 }

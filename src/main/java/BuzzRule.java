@@ -3,11 +3,11 @@ public class BuzzRule {
 
     public static final String SAY = "BUZZ";
 
-    public boolean isBuzz(int i) {
+    public boolean isMyRule(int i) {
         return i % 5 == 0;
     }
 
     public String say(int i) {
-        return isBuzz(i) ? SAY : "";
+        return isMyRule(i) ? SAY : "";
     }
 }

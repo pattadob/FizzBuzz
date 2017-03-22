@@ -8,15 +8,15 @@ public class FizzBuzz {
         FizzRule fizzRule = new FizzRule();
         BuzzRule buzzRule = new BuzzRule();
 
-        if (fizzBuzzRule.isFizzBuzz(i)) {
+        if (fizzBuzzRule.isMyRule(i)) {
             return fizzBuzzRule.say(i);
         }
 
-        if (fizzRule.isFizz(i)) {
+        if (fizzRule.isMyRule(i)) {
             return fizzRule.say(i);
         }
 
-        if (buzzRule.isBuzz(i)) {
+        if (buzzRule.isMyRule(i)) {
             return buzzRule.say(i);
         }
 
