@@ -8,12 +8,12 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class RuleFizzBuzxTest {
+public class RuleFizzBuzzTest {
 
     private int input;
     private String say;
 
-    public RuleFizzBuzxTest(int input, String say) {
+    public RuleFizzBuzzTest(int input, String say) {
         this.input = input;
         this.say = say;
     }
